@@ -1,0 +1,36 @@
+.stopwatch-p {
+    color: #fff;
+    font-size: 24px;
+    margin: 20px;
+}
+
+.stopwatch-time {
+    color: #fff;
+    font-size: 50px;
+    margin: 10px;
+}
+
+.stopwatch-buttons button {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-left: 20px;
+    font-size: 26px;
+    border: 1px solid #fff;
+    margin: 10px;
+}
+
+@media (max-width:550px) {
+    .stopwatch-p {
+        font-size: 18px;
+    }
+
+    .stopwatch-time {
+        font-size: 24px;
+    }
+
+    .stopwatch-buttons button {
+        width: 50px;
+        font-size: 20px;
+    }
+}

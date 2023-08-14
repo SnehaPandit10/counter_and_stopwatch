@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.home-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.home-main h1 {
+    padding: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.home-counter,
+.home-stopwatch {
+    font-size: 50px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    border: 1px solid grey;
+    font-family: 'Quicksand', sans-serif;
+    padding: 50px;
+}
+
+
+.counter-b,
+.stopwatch-b,
+.cancel-b {
+    width: 100px;
+    height: auto;
+    font-size: 24px;
+    align-items: center;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.home-counter {
+    background-image: url(/src/assets/counterBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-stopwatch {
+    background-image: url(/src/assets/stopwatchBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-counter button,
+.home-stopwatch button {
+    color: #fff;
+    -webkit-background-clip: text;
+    align-items: center;
+}
+
+
+.home-counter button:hover,
+.home-stopwatch button:hover {
+    color: white;
+}
+
+.home-counter-main,
+.home-stopwatch-main {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    transition: all 0.5s ease;
+}
+
+.home-counter-main.center,
+.home-stopwatch-main.center {
+    left: 0;
+}
+
+.home-counter-main.left,
+.home-stopwatch-main.left {
+    left: -8%;
+}
+
+@media(max-width:550px) {
+    .home-main h1 {
+        font-size: 22px;
+    }
+
+    .home-counter button,
+    .home-stopwatch button {
+        font-size: 16px;
+    }
+}
