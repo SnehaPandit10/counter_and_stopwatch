@@ -1,1 +1,5 @@
-# counter_and_stopwatch
+# To intsall all the required dependecies
+npm install
+
+# To run the application
+npm start
